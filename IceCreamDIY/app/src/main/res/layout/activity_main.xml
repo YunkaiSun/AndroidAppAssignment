@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="54dp"
+        android:background="#F1DFEB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20px"
+            android:background="@drawable/tall_icecream">
+
+            <TextView
+                android:id="@+id/HeaderTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ICE CREAM DIY"
+                android:layout_marginTop="20px"
+                android:textAllCaps="false"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/TopSpaceHolderTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/DescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Did you ever dream of creating your own ice cream as a child?"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+            <TextView
+                android:id="@+id/DescriptionTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Come here and lets make it happen!"
+                android:layout_marginTop="20sp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+            <TextView
+                android:id="@+id/WeOfferTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We Offer"
+                android:layout_marginTop="20sp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="25px"
+                            android:src="@drawable/icon"/>
+                        <TextView
+                            android:id="@+id/Offer1TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Custom Flavors"
+                            android:layout_marginLeft="20sp"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:visibility="visible"
+                            app:fontFamily="monospace" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="25px"
+                            android:src="@drawable/icon"/>
+                        <TextView
+                            android:id="@+id/Offer2TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:text="Custom Creams"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:visibility="visible"
+                            app:fontFamily="monospace" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_marginLeft="25px"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon"/>
+                        <TextView
+                            android:id="@+id/Offer3TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:text="Custom Cones"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:visibility="visible"
+                            app:fontFamily="monospace" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_marginLeft="25px"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/icon"/>
+                        <TextView
+                            android:id="@+id/Offer4TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:text="Custom Toppings"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:visibility="visible"
+                            app:fontFamily="monospace" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/OthersMasterpieceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Here's Other's Masterpieces. We know you can make a better one"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <!--Image Slides View-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/ToLeftClickableArea"
+                        android:layout_width="150px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical"
+                        android:clickable="true">
+                        <Button
+                            android:id="@+id/LeftBtn"
+                            android:layout_width="100px"
+                            android:layout_height="80px"
+                            android:background="@drawable/left"
+                            android:layout_marginTop="220px"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <ImageView
+                    android:layout_toRightOf="@id/ToLeftClickableArea"
+                    android:id="@+id/IceCreamImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="150px"
+                    android:src="@drawable/icecream1"
+                    />
+
+                    <LinearLayout
+                        android:id="@+id/ToRightClickableArea"
+                        android:layout_width="150px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/RightBtn"
+                            android:layout_width="100px"
+                            android:layout_height="80px"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="220px"
+                            android:background="@drawable/right"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/OurLocationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Our Location"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/BusLocationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="123 Fake Drive, Dallas, TX, 12345"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+            <TextView
+                android:id="@+id/OurContactTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Contact us to set up your ice cream appointment"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="35sp"
+                            android:layout_height="35sp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="20px"
+                            android:src="@drawable/email"/>
+                        <TextView
+                            android:id="@+id/BusEmailTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginLeft="10px"
+                            android:text="JohnDoe123@gmail.com"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:fontFamily="monospace" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="25px"
+                            android:src="@drawable/phone"/>
+                        <TextView
+                            android:id="@+id/BusPhoneTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginLeft="15px"
+                            android:text="(123)456-7890"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:fontFamily="monospace" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="25px"
+                            android:src="@drawable/website"/>
+                        <TextView
+                            android:id="@+id/BusWebsiteTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginLeft="15px"
+                            android:text="www.IceCreamDIY.com"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:fontFamily="monospace" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/BottomPlaceHolderTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/CreditsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:text="Photo credits to https://www.bakepedia.com. https://en.wikipedia.org/wiki/Ice_cream, https://www.Tastemade.com"
+                android:textAllCaps="false"
+                android:textSize="6sp"
+                android:visibility="visible"
+                app:fontFamily="monospace" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
